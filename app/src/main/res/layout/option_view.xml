@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="4dp"
+    android:gravity="center_vertical"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:id="@+id/roundColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/select_option"
+            style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+
+
+        <TextView
+            android:id="@+id/txt_option_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="옵션이름"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_option_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:text="원"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

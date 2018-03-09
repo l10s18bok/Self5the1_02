@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shopping"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:background="@drawable/layout_border2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/roundColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="?attr/actionModeSplitBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="No"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="주문시간"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="주문메뉴"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="가 격"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="결제"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/details_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총판매갯수 : "
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAmont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총 합 계 : "
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

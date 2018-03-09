@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="l10s18bok.naver.com.self5the1_0.MyShopping.ShoppingMain">
+
+
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ic_card_new" />
+
+    <TextView
+        android:id="@+id/txtPaymentTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_border">
+        <Button
+            android:id="@+id/btnReSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Re-signed"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:text="          싸인은 이곳에 하세요."/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/layout_border">
+
+        <l10s18bok.naver.com.self5the1_0.MyShopping.CanvasView
+            android:id="@+id/signCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </l10s18bok.naver.com.self5the1_0.MyShopping.CanvasView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancellation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="결재취소" />
+
+        <Button
+            android:id="@+id/btnCardPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="결재완료" />
+    </LinearLayout>
+
+
+</LinearLayout>

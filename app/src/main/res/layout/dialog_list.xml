@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/zxing_custom_viewfinder_laser"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:text="옵 션 선 택"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/cardview_light_background"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/set_all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/sw_option_on_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="옵션 Off/On" />
+
+            <TextView
+                android:id="@+id/txtAddOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:text="옵션추가"
+                android:textAlignment="textEnd"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/edit_reOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textColorHint="@android:color/darker_gray"/>
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="변경"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/chk_take_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="auto"
+                android:text="포장(Take out)"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="포장(Take Out)" />
+
+            <TextView
+                android:id="@+id/txt_takeOut_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:text="500"
+                android:textAlignment="center"
+                android:textColor="@color/zxing_viewfinder_laser"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/btn_number_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:backGroundColor="@color/zxing_custom_viewfinder_laser"
+            app:textColor="@android:color/white"
+            app:textSize="10sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_not_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="선택안함"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="선택완료"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
